@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="yearBornApp">
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+	<script type="text/javascript" src="lab-birthyear.js"></script>
+
+</head>
+<body ng-controller="yearBornController">
+	<div>
+		<form ng-submit="showAge()">
+			Enter your age:
+			<br/>
+			<input type="text" ng-model="age">
+			<button type="submit">Submit</button>
+			<br/>
+			<div ng-show="ageEntered">
+			You were born in {{birthYear}}
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
