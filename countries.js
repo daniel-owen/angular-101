@@ -1,6 +1,8 @@
 var countriesApp = angular.module('countriesApp', []);
 countriesApp.controller('countriesController', function($scope){
 
+	$scope.reverse = true;
+
 	$scope.countries = [
 		{
 			name: "United States",
